@@ -1,5 +1,6 @@
 import discord
 from discord import utils
+import os
 
 import config
 
@@ -47,4 +48,4 @@ class MyClient(discord.Client):
             print(repr(e))
 # RUN
 client = MyClient()
-client.run(config.TOKEN)
+token = os.enviton.get('BOT_TOKEN')
